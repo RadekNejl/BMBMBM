@@ -10,21 +10,21 @@
 
 <AnchorPane layoutX="800.0" layoutY="600.0" prefHeight="614.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainFXController">
    <children>
-      <Canvas fx:id="platno" height="600.0" width="900.0" />
+      <Canvas fx:id="platno" height="1187.0" layoutX="-779.0" layoutY="-587.0" width="1641.0" />
       <AnchorPane layoutX="-770.0" layoutY="-582.0" prefHeight="1174.0" prefWidth="1135.0" style="-fx-background-color: lightgrey;">
          <children>
-            <AnchorPane layoutX="441.0" layoutY="497.0" prefHeight="200.0" prefWidth="200.0">
+            <AnchorPane layoutX="441.0" layoutY="497.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: pink;">
                <children>
-                  <Button layoutX="10.0" layoutY="8.0" mnemonicParsing="false" prefHeight="177.0" prefWidth="180.0" text="Button">
+                  <Button layoutX="10.0" layoutY="8.0" mnemonicParsing="false" prefHeight="177.0" prefWidth="180.0" style="-fx-background-color: pink;">
                      <font>
-                        <Font size="39.0" />
+                        <Font size="37.0" />
                      </font>
                   </Button>
                </children>
             </AnchorPane>
          </children>
       </AnchorPane>
-      <GridPane gridLinesVisible="true" layoutX="376.0" layoutY="-549.0" prefHeight="1123.0" prefWidth="482.0" style="-fx-background-color: lightgrey;">
+      <GridPane gridLinesVisible="true" layoutX="376.0" layoutY="-553.0" prefHeight="1123.0" prefWidth="482.0" style="-fx-background-color: lightgrey;">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
