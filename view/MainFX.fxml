@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="velkyan" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainFXController">
+    <children>
+        <AnchorPane fx:id="koleckoplatno" layoutX="8.0" layoutY="10.0" prefHeight="574.0" prefWidth="579.0" style="-fx-background-color: lightgrey;">
+         <children>
+                <Canvas fx:id="platno" height="568.0" style="-fx-background-color: pink;" width="571.0" />
+            <Button mnemonicParsing="false" onAction="#dostanFigurkydoHry" prefHeight="38.0" prefWidth="111.0" text="Button" />
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#initaliaze" prefHeight="37.0" prefWidth="45.0" text="HOD:" textAlignment="CENTER" wrapText="true">
+                      <font>
+                          <Font size="10.0" />
+                      </font>
+               <cursor>
+                  <Cursor fx:constant="CROSSHAIR" />
+               </cursor>
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/bitmapa.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+                  </Button>
+            <Button layoutY="3.0" mnemonicParsing="false" onAction="#initaliaze" prefHeight="45.0" prefWidth="52.0" text="Button">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/bitmapaZpatky.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Button>
+            <Button layoutX="45.0" layoutY="213.0" mnemonicParsing="false" onAction="#vypln" text="Button" />
+            <Button layoutX="45.0" layoutY="259.0" mnemonicParsing="false" onAction="#hod" text="Button" />
+            <Button layoutX="45.0" layoutY="155.0" mnemonicParsing="false" onAction="#dostanFigurkydoHry" text="Button" />
+            <Button layoutX="45.0" layoutY="120.0" mnemonicParsing="false" onAction="#PosunFigurku" text="Button" />
+            <Button layoutX="45.0" layoutY="296.0" mnemonicParsing="false" onAction="#NasadFigurku" text="Button" />
+            <Button layoutX="45.0" layoutY="339.0" mnemonicParsing="false" onAction="#PosunFigurku" text="Button" />
+         </children></AnchorPane>
+      <Label layoutX="273.0" layoutY="200.0" prefHeight="113.0" prefWidth="76.0" text="Label" />
+    </children>
+</AnchorPane>

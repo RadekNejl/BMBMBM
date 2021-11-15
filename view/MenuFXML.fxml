@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MainFXController">
+   <children>
+      <AnchorPane layoutX="16.0" layoutY="16.0" prefHeight="568.0" prefWidth="571.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Canvas fx:id="herniPole" height="568.0" layoutX="10.0" layoutY="10.0" width="571.0" />
+            <Canvas fx:id="platno" height="568.0" width="571.0" />
+            <TextFlow layoutX="186.0" layoutY="43.0" onMouseClicked="#hod" prefHeight="200.0" prefWidth="200.0" />
+            <Text layoutX="87.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Člověče nezlob se">
+               <font>
+                  <Font name="Yu Gothic Regular" size="44.0" />
+               </font>
+            </Text>
+            <Button layoutX="160.0" layoutY="212.0" mnemonicParsing="false" onAction="#zmenObrazovku" onDragExited="#vypln" prefHeight="114.0" prefWidth="200.0" text="Začít hru">
+               <font>
+                  <Font name="Yu Gothic Light" size="36.0" />
+               </font>
+            </Button>
+            <Button layoutX="160.0" layoutY="356.0" mnemonicParsing="false" onAction="#vypniHru" prefHeight="114.0" prefWidth="200.0" text="Ukončit">
+               <font>
+                  <Font name="Yu Gothic Light" size="36.0" />
+               </font>
+            </Button>
+            <Separator prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+      <Button mnemonicParsing="false" text="Button" />
+   </children>
+</AnchorPane>
