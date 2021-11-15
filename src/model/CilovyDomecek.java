@@ -7,7 +7,7 @@ public class CilovyDomecek {
 
     private List<Figurka> figurky;
     private BarvaFigurky barvaFigurky;
-    private int pocet;
+    private int pocet = 4;
 
 
 

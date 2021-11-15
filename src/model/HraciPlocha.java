@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static javafx.scene.paint.Color.GREEN;
+
 public class HraciPlocha {
     private Map<BarvaFigurky, StartovniDomecek> startovniDomecekmap = new HashMap<>();
     private Map<BarvaFigurky, CilovyDomecek> cilovyDomecekMap = new HashMap<>();
@@ -15,9 +17,14 @@ public class HraciPlocha {
 
 
 
+//method body
+
+
+
+
 
         for (int i = 0; i < pocetHracu; i++) {
-            BarvaFigurky barvaFigurky = new BarvaFigurky(i*pocetMeziPoli, pocetHracu*pocetMeziPoli);
+            BarvaFigurky barvaFigurky = new BarvaFigurky(i*pocetMeziPoli, pocetHracu*pocetMeziPoli, GREEN);
             StartovniDomecek startovniDomecek = new StartovniDomecek(pocetFigurek, barvaFigurky);
             startovniDomecekmap.put(barvaFigurky, startovniDomecek);
 
@@ -31,8 +38,8 @@ public class HraciPlocha {
     }
         public void nasad (BarvaFigurky barvaFigurky) {}
         public int nasad (Figurka figurka) {
-            int nasazeni= figurka.getBarvaFigurky().getStart();
-            hraciPole.set(nasazeni, figurka);
+           // int nasazeni= figurka.getBarvaFigurky().getStart();
+          //  hraciPole.set(nasazeni, figurka);
             int ok = 1;
             return ok;
         }
@@ -71,6 +78,7 @@ public class HraciPlocha {
 
 
     }
+
 
 
 

@@ -1,6 +1,11 @@
 package model;
 
+import javafx.scene.paint.Color;
+
 import java.util.LinkedList;
+
+import static javafx.scene.paint.Color.*;
+import static javafx.scene.paint.Color.GREEN;
 
 public class StartovniDomecek {
 
@@ -30,6 +35,12 @@ public class StartovniDomecek {
         return figurky.size();
     }
     public String toString() {
+
+
+
+        LinkedList<Figurka> figurky = new LinkedList<>();
+        int pocet = 4;
+
         StringBuilder sb = new StringBuilder();
 
 
@@ -44,5 +55,29 @@ public class StartovniDomecek {
         }
 
         return sb.toString();
+
+
+
+    }
+    public static int[] souradnice (int hrac) {
+
+        int [] souradniceXY = new int[8];
+        if (hrac == 0) {
+
+            souradniceXY = new int[]{75, 75, 140, 140,  82, 142, 82, 142};
+
+        }
+        if (hrac == 1) {
+            new BarvaFigurky(10, 40, BLUE);}
+        if (hrac == 2) {
+            new BarvaFigurky(20, 40, YELLOW);
+        }
+        if (hrac == 3) {
+            new BarvaFigurky(30, 40, GREEN);
+        }
+
+
+
+    return souradniceXY;
     }
 }

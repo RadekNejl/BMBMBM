@@ -12,7 +12,15 @@ public class Figurka {
         public BarvaFigurky getBarvaFigurky(){
             return barvaFigurky;
         }
-    }
+
+       private BarvaFigurky type;
+
+        public BarvaFigurky getType() {
+            return type;
+        }
+
+
+}
 
 
 
