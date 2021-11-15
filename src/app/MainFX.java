@@ -20,13 +20,15 @@ public class MainFX extends Application {
 
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(Main.class.getResource("../view/MainFx.fxml"));
-            AnchorPane root = (AnchorPane) loader.load();
+            loader.setLocation(Main.class.getResource("/view/MenuFXML.fxml"));
+            AnchorPane root;
+            root = (AnchorPane) loader.load();
             Scene scene = new Scene(root);
             primaryStage.setScene(scene);
             primaryStage.show();
         }catch(IOException e) {
             e.printStackTrace();
+
         }
 
 

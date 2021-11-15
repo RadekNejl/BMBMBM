@@ -1,17 +1,26 @@
 package app;
 
 import cz.gjkt.zlomky.Kostka;
+import model.BarvaFigurky;
+import model.Figurka;
+import model.HraciPlocha;
+import model.StartovniDomecek;
+
+import java.util.LinkedList;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Kostka kostka = new Kostka();
-        Kostka kostka1 = new Kostka(6);
-        Kostka kostkaB = new Kostka(7);
+        System.out.println(BarvaFigurky.getStart(1));
 
-        for (int i = 0; i <= 5; i++) {
-            System.out.println(i + ". " + kostkaB.hodCislo());
-        }
+
     }
-}
+
+
+    }
+
+
+
+
+
